@@ -1,0 +1,12 @@
+*.d
+*.o
+*.so
+tags
+.gitignore
+*.swp
+.gdbinit
+sftp-config.json
+doc
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
