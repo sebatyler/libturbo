@@ -628,7 +628,7 @@ double	tb_atof (const char * src, double def)
 */
 time_t	tb_atot (const char * src, time_t def)
 {
-	return	src && *src ? tb_timestamp_from_date(src) : def ;
+	return	src && *src ? tb_date_string_to_time(src) : def ;
 }
 
 /** @fn char	tb_atob (const char * src, char def)

@@ -6,12 +6,12 @@
 
 #include "turbo.h"
 
-/** @fn time_t	tb_timestamp_from_date (const char * date)
+/** @fn time_t	tb_date_string_to_time (const char * date)
     @brief	날짜 시간 문자열을 time_t 으로 변환
     @param	date	YYYY-MM-DD hh:mm:ss 형태의 날짜 시간 문자열
     @return	time_t 시간값
 */
-time_t	tb_timestamp_from_date (const char * date)
+time_t	tb_date_string_to_time (const char * date)
 {
 	struct tm	tm;
 	int		year ;
@@ -24,13 +24,13 @@ time_t	tb_timestamp_from_date (const char * date)
 	return	t ;
 }
 
-/** @fn const char *	tb_string_from_timestamp (apr_pool_t * pool, time_t time)
+/** @fn const char *	tb_string_time_to_string (apr_pool_t * pool, time_t time)
     @brief		time_t 시간값을 문자열로 변환
     @param		pool	메모리 할당 풀
     @param		time	시간값
     @return		YYYY-MM-DD hh:mm:ss 형태의 문자열
 */
-const char *	tb_string_from_timestamp (apr_pool_t * pool, time_t time)
+const char *	tb_date_time_to_string (apr_pool_t * pool, time_t time)
 {
 	struct tm	time_tm ;
 	localtime_r(&time, &time_tm) ;

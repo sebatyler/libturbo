@@ -105,8 +105,8 @@ const void *	tb_hmac_hash (apr_pool_t * pool, const void * key, int key_len, con
 const char *	tb_curtail_string (apr_pool_t * pool, const char * src, int curtail_n, const char * postfix) ;
 
 /* dateutil.c */
-time_t	tb_timestamp_from_date (const char * date) ;
-const char *	tb_string_from_timestamp (apr_pool_t * pool, time_t time) ;
+time_t	tb_date_string_to_time (const char * date) ;
+const char *	tb_date_time_to_string (apr_pool_t * pool, time_t time) ;
 const char *	tb_date_header_value (apr_pool_t * pool, struct tm time) ;
 const char *	tb_date_extended (apr_pool_t * pool, struct tm time) ;
 const char *	tb_date_basic (apr_pool_t * pool, time_t time, int gmt) ;
