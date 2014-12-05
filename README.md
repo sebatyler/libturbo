@@ -19,7 +19,7 @@ After compilation, you should make symbolic link for include directories in /usr
 Example is below.
 
 ```bash
-ll apr apr-util httpd
+$ ll apr apr-util httpd
 lrwxrwxrwx 1 root root 41 Jan 21 21:21 apr -> /home/ubuntu/apr/include/apr-1/
 lrwxrwxrwx 1 root root 46 Jan 21 21:22 apr-util -> /home/ubuntu/apr-util/include/apr-1/
 lrwxrwxrwx 1 root root 37 Jan 21 21:21 httpd -> /home/ubuntu/httpd/include/
@@ -35,13 +35,13 @@ You can modify directory path in CMakeLists.txt.
 ## Build & Install
 
 ```bash
-cmake ./
-make
-sudo make install
+$ cmake ./
+$ make
+$ sudo make install
 ```
 
 After install, output paths is below.
 
-header file : /usr/local/include/turbo.h
-library file : /usr/local/lib/libturbo.so
+- header file : /usr/local/include/turbo.h
+- library file : /usr/local/lib/libturbo.so
 
