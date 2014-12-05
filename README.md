@@ -45,3 +45,11 @@ After install, output paths is below.
 - header file : /usr/local/include/turbo.h
 - library file : /usr/local/lib/libturbo.so
 
+## Document
+
+You can make document with doxygen.
+
+```bash
+$ doxygen
+```
+
